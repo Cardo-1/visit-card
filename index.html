@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardoo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="company-container">
+        <form action="/action_page.php">
+          <label for="companyName">Company name :</label>
+          <input type="text" id="companyName" name="companyName" placeholder="your company name..">
+      
+          <label for="speciality">Speciality :</label>
+          <input type="text" id="speciality" name="speciality" placeholder="your speciality..">
+           
+          <label for="adresse">Adresse :</label>
+          <input type="text" id="adresse" name="adresse" placeholder="your company adresse..">
+
+          <label for="phoneNumber">Phone number :</label>
+          <input type="text" id="phoneNumber" name="phoneNumber" placeholder="your phone number..">
+
+          <label for="font">Select font :</label>
+          <select id="font" name="font">
+              <option selected="selected" id='serif' value="font1">Serif</option>
+              <option selected="selected" id='sans-serif' value="font2">Sans-serif</option>
+              <option selected="selected" id='monospace' value="font3">Monospace</option>
+              <option selected="selected" id='cursive' value="font4">Cursive</option>
+              <option selected="selected" id='fantasy' value="font5">Fantasy</option>
+              <option selected="selected" id='system-ui' value="font6">System-ui</option>
+              <option selected="selected" id='math' value="font7">Math</option>
+              <option selected="selected" id='fangsong' value="font8">Fangsong</option>
+          </select>
+
+          <input id='tryItC' type="submit" value="try it">
+
+        </form>
+    </div>
+    <p id='companyTxt'>Company</p>
+    <p id='personalTxt'>personal</p>
+    <img class='pic' id='pic1' src="./pictures/carte1.png" alt="">
+    <img class='pic' id='pic2' src="./pictures/carte2.jpg" alt="">
+    <img class='pic' id='pic3' src="./pictures/carte3.jpg" alt="">
+    <img class='pic' id='pic4' src="./pictures/carte4.jpg" alt="">
+    <img class='picBigC' id='pic1Big' src="./pictures/carte1.png" alt="">
+    <img class='picBigC' id='pic2Big' src="./pictures/carte2.jpg" alt="">
+    <img class='picBigC' id='pic3Big' src="./pictures/carte3.jpg" alt="">
+    <img class='picBigC' id='pic4Big' src="./pictures/carte4.jpg" alt="">
+    <img class='pic' id='pic5' src="./pictures/carte5.jpg" alt="">
+    <img class='pic' id='pic6' src="./pictures/carte6.jpg" alt="">
+    <img class='pic' id='pic7' src="./pictures/carte7.jpg" alt="">
+    <img class='pic' id='pic8' src="./pictures/carte8.jpg" alt="">
+    <img class='picBigP' id='pic5Big' src="./pictures/carte5.jpg" alt="">
+    <img class='picBigP' id='pic6Big' src="./pictures/carte6.jpg" alt="">
+    <img class='picBigP' id='pic7Big' src="./pictures/carte7.jpg" alt="">
+    <img class='picBigP' id='pic8Big' src="./pictures/carte8.jpg" alt="">
+    <img id='company' classe='classPic' src="./pictures/company.png" alt="">
+    <img id='personal' classe='classPic' src="./pictures/personal.png" alt="">
+    <script src="main.js"></script>
+</body>
+</html>
