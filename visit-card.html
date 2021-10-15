@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardoo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./visit-card.html">visit-card</a></li>
+        <li><a href="">AboutUs</a></li>
+        <li><a id="con" href="./Contact.html">Contact</a></li>
+      </ul>
+
+
+<div id='position'>
+    <label for="top">Top :</label>
+    <input type="text" id="top" name="top" placeholder="top..">
+    <label for="left">Left :</label>
+    <input type="text" id="left" name="left" placeholder="left..">
+    <select id="txt-position" name="font">
+        <option   value="companyName">Company-Name</option>
+        <option   value="Speciality">Speciality</option>
+        <option   value="companyAdresse">Company-Adresse</option>  
+        <option   value="phoneNumber">Phone-Number</option>
+        <option   value="logoC">Logo</option>
+    </select>
+    <label for="font">Select font :</label>
+          <select id="font" name="font">
+              <option selected="serif" id='serif' value="Serif">Serif</option>
+              <option selected="sans-serif" id='sans-serif' value="sans-serif">Sans-serif</option>
+              <option selected="monospace" id='monospace' value="monospace">Monospace</option>
+              <option selected="cursive" id='cursive' value="cursive">Cursive</option>
+              <option selected="fantasy" id='fantasy' value="fantasy">Fantasy</option>
+              <option selected="system-ui" id='system-ui' value="system-ui">System-ui</option>
+              <option selected="math" id='math' value="Math">Math</option>
+              <option selected="Festive" id='Festive' value="'Festive', cursive">Festive</option>
+          </select>
+          <label for="font-size">Font-size :</label>
+          <input type="text" id="font-size-C" name="font-size" placeholder="font size please..">
+          <input type="color" id='text-color-C'>
+    <button id='validate-position'>validate</button>
+</div>
+
+<div id='logoSize'>
+    <label for="logo-height">Height :</label>
+    <input type="text" id="logo-height" name="logo-height" placeholder="Height..">
+    <label for="logo-width">Width :</label>
+    <input type="text" id="logo-width" name="logo-width" placeholder="width..">
+    <button id='validate-logo'>validate</button>
+</div>
+
+<div id='positionP'>
+    <label for="topP">Top :</label>
+    <input type="text" id="topP" name="topP" placeholder="top..">
+    <label for="leftP">Left :</label>
+    <input type="text" id="leftP" name="leftP" placeholder="left..">
+    <select id="txt-position-P" name="font">
+        <option   value="fullName">fullName</option>
+        <option   value="job">job</option>
+        <option   value="adresseP">adresse</option>  
+        <option   value="phoneNumberP">Phone-Number</option>
+        <option   value="pictureP">Personal-picture</option>
+    </select>
+    <label for="fontP">Select font :</label>
+          <select id="fontP" name="font">
+              <option selected="serif" id='serif' value="serif">Serif</option>
+              <option selected="sans-serif" id='sans-serif' value="sans-serif">sans-serif</option>
+              <option selected="monospace" id='monospace' value="monospace">monospace</option>
+              <option selected="cursive" id='cursive' value="cursive">Cursive</option>
+              <option selected="fantasy" id='fantasy' value="fantasy">Fantasy</option>
+              <option selected="system-ui" id='system-ui' value="system-ui">System-ui</option>
+              <option selected="math" id='math' value="math">Math</option>
+              <option selected="Festive" id='Festive' value="'Festive', cursive">Festive</option>
+          </select>
+          <label for="font-size">Font-size :</label>
+          <input type="text" id="font-size-P" name="font-size" placeholder="font size please..">
+          <input type="color" id='text-color-P'>
+    <button id='validate-position-P'>validate</button>
+</div>
+
+<div id='companyData'>
+    <img class='picC' id='pic1' src="./pictures/carte1.png" >
+    <img class='picC' id='pic2' src="./pictures/carte2.jpg" >
+    <img class='picC' id='pic3' src="./pictures/carte3.jpg" >
+    <img class='picC' id='pic4' src="./pictures/carte4.jpg" >
+    <div id="company-content"></div>
+</div>
+
+<div id='personalData'>
+    <img class='picP' id='pic5' src="./pictures/carte5.jpg" >
+    <img class='picP' id='pic6' src="./pictures/carte6.jpg" >
+    <img class='picP' id='pic7' src="./pictures/carte7.jpg" >
+    <img class='picP' id='pic8' src="./pictures/carte8.jpg" >
+    <div id='personal-content'></div>
+</div>
+
+<div class="company-container">
+    <form action="/action_page.php">
+          <label for="companyName">Company name :</label>
+          <input type="text" id="companyName" name="companyName" placeholder="your company name..">
+      
+          <label for="speciality">Speciality :</label>
+          <input type="text" id="speciality" name="speciality" placeholder="your speciality..">
+           
+          <label for="adresse">Adresse :</label>
+          <input type="text" id="adresseC" name="adresse" placeholder="your company adresse..">
+
+          <label for="phoneNumber">Phone number :</label>
+          <input type="text" id="phoneNumberC" name="phoneNumber" placeholder="your phone number..">
+
+          <label for="logoC">logo :</label>
+          <input type="text" id="logoC" name="logoC" placeholder="your Logo URL..">
+
+          
+          <input id='tryItC' type="button" value="try it">
+          <input id='clearC' type="button" value="clear">
+
+    </form>
+</div>
+
+
+<div class="personal-container">
+    <form action="/action_page.php">
+          <label for="fullName">FullName :</label>
+          <input type="text" id="fullName" name="fullName" placeholder="your fullname..">
+      
+          <label for="job">Job :</label>
+          <input type="text" id="job" name="job" placeholder="your job..">
+           
+          <label for="adresse">Adresse :</label>
+          <input type="text" id="adresseP" name="adresse" placeholder="your adresse..">
+
+          <label for="phoneNumber">Phone number :</label>
+          <input type="text" id="phoneNumberP" name="phoneNumber" placeholder="your phone number..">
+
+          <label for="pictureP">Personal Picture :</label>
+          <input type="text" id="pictureP" name="pictureP" placeholder="your picture URL..">
+
+          <input id='tryItP' type="button" value="try it">
+          <input id='clearP' type="button" value="clear">
+
+    </form>
+</div>
+    <p id='companyTxt'>Company</p>
+    <p id='personalTxt'>Personal</p>
+    <img class='picBigC' id='pic1Big' src="./pictures/carte1.png" alt="">
+    <img class='picBigC' id='pic2Big' src="./pictures/carte2.jpg" alt="">
+    <img class='picBigC' id='pic3Big' src="./pictures/carte3.jpg" alt="">
+    <img class='picBigC' id='pic4Big' src="./pictures/carte4.jpg" alt="">
+    <img class='picBigP' id='pic5Big' src="./pictures/carte5.jpg" alt="">
+    <img class='picBigP' id='pic6Big' src="./pictures/carte6.jpg" alt="">
+    <img class='picBigP' id='pic7Big' src="./pictures/carte7.jpg" alt="">
+    <img class='picBigP' id='pic8Big' src="./pictures/carte8.jpg" alt="">
+    <img id='company' classe='classPic' src="./pictures/company.png" alt="">
+    <img id='personal' classe='classPic' src="./pictures/personal.png" alt="">
+    <script src="main.js"></script>
+</body>
+</html>

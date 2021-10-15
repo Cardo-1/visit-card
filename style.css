@@ -1,24 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
 body{
-    background-image: url(./pictures/decoration-floor-parquet-pattern.jpg);
+    background-image: url('https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
     height: 100%;
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
 }
-
-.pic{
-    position:absolute;
-    top:220px;
-    left:600px;
-    width: 700px;
-    height: 350px;
+.nav {
+    list-style-type: none;
+    margin-top:-10px;
+    margin-left: -8px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+   width: 1536px;
+   position: absolute;
+  }
+  
+  li {
+    float:left ;
+    font-size: 100%;
+    padding: -1%;
+   }
+   #con{
+     margin-left: 1192px;
+   }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
 }
+  
+#cont{
+  color: black;
+  opacity:0.2;
+  font-size: 1300%;
+  margin-left: 250px;
+  margin-top: 20px;
+}
+#touch{
+  color: rgb(36, 35, 35);
+  margin-left: 450px;
+  margin-top: -300px;
+  font-size:500%;
+  letter-spacing: 4px;
+}
+#dont{
+  margin-left: 80px;
+  font-size:210% ;
+  font-family:inherit;
+   word-spacing: 7px;
+}
+#para{
+  margin-left: 80px;
+  font-size: 120%;
+  word-spacing: 5px;
+  font-family:sans-serif;
+  color: rgb(31, 29, 29);
+}
+#mail{
+  width: 100px;
+  margin-left: 60px;  
+}
+#envo{
+  margin-left: 85px;
+  margin-top: -25px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(41, 39, 39);
+}
+#phone{
+  width: 70px;
+  margin-left: 70px; 
+  margin-top: 20px;
+}
+#call{
+  margin-left: 85px;
+  margin-top: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(41, 39, 39);
+}
+.enter{
+    margin-top: -450px;
+    margin-left: 800px;
+    height: 80px;
+}
+#in{
+  height: 30px;
+  width: 80%;
+}
+#inp{
+  height: 30px;
+  width: 80%;
+}
+#inpu{
+  width: 80%;
+  height: 250%;
+ }
+.tacbox {
+  
+  padding: 0em;
+  margin: 1em;
+  border: 3px solid #ddd; 
+  margin-left: 830px;
+  margin-top: 250px;
+}
+
+input {
+  height: 15px;
+  width: 15px;
+  vertical-align: middle;
+}
+#BUT{
+  margin-left: 840px;
+  margin-top: 20px;
+  font-size: 140%;
+  background-color: rgb(134, 134, 134);
+}
+
 #pic1Big{
     position:absolute;
     top:200px;
     left:280px;
     width: 500px;
     height: 300px;
+}
+#pic1Big:hover{
+    transform: scale(1.05);
 }
 #pic2Big{
     position:absolute;
@@ -27,12 +142,18 @@ body{
     width: 500px;
     height: 300px;
 }
+#pic2Big:hover{
+    transform: scale(1.05);
+}
 #pic3Big{
     position:absolute;
     top:520px;
     left:280px;
     width: 500px;
     height: 300px;
+}
+#pic3Big:hover{
+    transform: scale(1.05);
 }
 #pic4Big{
     position:absolute;
@@ -41,12 +162,18 @@ body{
     width: 500px;
     height: 300px;
 }
+#pic4Big:hover{
+    transform: scale(1.05);
+}
 #pic5Big{
     position:absolute;
     top:200px;
     left:280px;
     width: 500px;
     height: 300px;
+}
+#pic5Big:hover{
+    transform: scale(1.05);
 }
 #pic6Big{
     position:absolute;
@@ -55,12 +182,18 @@ body{
     width: 500px;
     height: 300px;
 }
+#pic6Big:hover{
+    transform: scale(1.05);
+}
 #pic7Big{
     position:absolute;
     top:520px;
     left:280px;
     width: 500px;
     height: 300px;
+}
+#pic7Big:hover{
+    transform: scale(1.05);
 }
 #pic8Big{
     position:absolute;
@@ -69,44 +202,41 @@ body{
     width: 500px;
     height: 300px;
 }
-
+#pic8Big:hover{
+    transform: scale(1.05);
+}
 #company{
     position:absolute;
     top:320px;
     left:400px;
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
 }
 #company:hover{
     transform: scale(1.2);
 }
-
 #personal{
     position:absolute;
     top:320px;
     left:920px;
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 280px;
 }
 #personal:hover{
     transform: scale(1.2);
 }
-
-
 #companyTxt{
     position: absolute;
-    left: 410px;
+    left: 380px;
     top: 100px;
-    font-size: 100px;
+    font-size: 100px;  
 }
-
 #personalTxt{
     position: absolute;
     left: 900px;
     top: 100px;
     font-size: 100px;
 }
-
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -117,31 +247,163 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
-  
-input[type=submit] {
+input[type=button] {
     background-color: #008CBA;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 160px;
+    width: 80px;
     position:relative;
-    margin-left: 70px;
+    margin-left: 30px;
 }
-  
-input[type=submit]:hover {
+input[type=button]:hover {
     background-color: #026383;
 }
-  
 .company-container {
     position: absolute;
-    top: 210px;
+    top: 180px;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
     width: 300px;
-    margin-left: 30px;
+    margin-left: 30px; 
+}
+.personal-container{
+    position: absolute;
+    top: 180px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 300px;
+    margin-left: 30px;  
+}
+#companyData{
+    position:absolute;
+    top:220px;
+    left:440px;
+    width: 700px;
+    height: 350px; 
+}
+.picC{
+    width: 100%;
+    height: 100%;   
+}
+.picP{
+    width: 100%;
+    height: 100%;
+}
+#personalData{
+    position:absolute;
+    top:220px;
+    left:440px;
+    width: 700px;
+    height: 350px;  
+}
+#nameStyle{
+    position: absolute;
+    top: 8px;
+    left: 8px;
     
+}
+#specialityStyle{
+    position: absolute;
+    top: 30px;
+    left: 8px;
+}
+#adresseCStyle{
+    position: absolute;
+    top: 60px;
+    left: 8px;  
+}
+#phoneNumberCStyle{
+    position: absolute;
+    top: 100px;
+    left: 8px;  
+}
+#fullNameStyle{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+#jobStyle{
+    position: absolute;
+    top: 30px;
+    left: 8px;
+}
+#adressePStyle{
+    position: absolute;
+    top: 60px;
+    left: 8px;  
+}
+#phoneNumberPStyle{
+    position: absolute;
+    top: 100px;
+    left: 8px;  
+}
+#position{
+    position: absolute;
+    top:180px;
+    width: 300px;
+    left:1200px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color:#f2f2f2 ;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+#validate-position{
+    background-color: #008CBA;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80px;
+    position:relative;
+    margin-left: 30px;
+}
+#validate-position:hover {
+    background-color: #026383;
+}
+#positionP{
+    position: absolute;
+    top:180px;
+    width: 300px;
+    left:1200px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color:#f2f2f2 ;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#validate-position-P{
+    background-color: #008CBA;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80px;
+    position:relative;
+    margin-left: 30px;
+}
+#validate-position-P:hover {
+    background-color: #026383;
+}
+#logoCStyle{
+    position: absolute;
+    top:30px;
+    left :50px;
+    height: 50px;
+    width: 50px;
+}
+#picturePStyle{
+    position: absolute;
+    top:30px;
+    left :50px;
+    height: 50px;
+    width: 50px;
 }
 
