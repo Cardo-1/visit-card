@@ -16,17 +16,18 @@
         <li><a id="con" href="./Contact.html">Contact</a></li>
       </ul>
 
-
+<button class='back' id='backC'>BACK</button>
+<button class='back' id='backP'>BACK</button>
 <div id='position'>
     <label for="top">Top :</label>
     <input type="text" id="top" name="top" placeholder="top..">
     <label for="left">Left :</label>
     <input type="text" id="left" name="left" placeholder="left..">
     <select id="txt-position" name="font">
-        <option   value="companyName">Company-Name</option>
+        <option   value="companyName">Company Name</option>
         <option   value="Speciality">Speciality</option>
-        <option   value="companyAdresse">Company-Adresse</option>  
-        <option   value="phoneNumber">Phone-Number</option>
+        <option   value="companyAdresse">Company Adresse</option>  
+        <option   value="phoneNumber">Phone Number</option>
         <option   value="logoC">Logo</option>
     </select>
     <label for="font">Select font :</label>
@@ -41,17 +42,25 @@
               <option selected="Festive" id='Festive' value="'Festive', cursive">Festive</option>
           </select>
           <label for="font-size">Font-size :</label>
-          <input type="text" id="font-size-C" name="font-size" placeholder="font size please..">
+          <input type="text" id="font-size-C" name="font-size" placeholder="font size..">
           <input type="color" id='text-color-C'>
     <button id='validate-position'>validate</button>
 </div>
 
 <div id='logoSize'>
-    <label for="logo-height">Height :</label>
+    <label for="logo-height"> Logo Height :</label>
     <input type="text" id="logo-height" name="logo-height" placeholder="Height..">
-    <label for="logo-width">Width :</label>
+    <label for="logo-width">Logo Width :</label>
     <input type="text" id="logo-width" name="logo-width" placeholder="width..">
     <button id='validate-logo'>validate</button>
+</div>
+
+<div id='pictureSize'>
+    <label for="picture-height"> Logo Height :</label>
+    <input type="text" id="picture-height" name="picture-height" placeholder="Height..">
+    <label for="logo-width">Logo Width :</label>
+    <input type="text" id="picture-width" name="picture-width" placeholder="width..">
+    <button id='validate-picture'>validate</button>
 </div>
 
 <div id='positionP'>
@@ -60,11 +69,11 @@
     <label for="leftP">Left :</label>
     <input type="text" id="leftP" name="leftP" placeholder="left..">
     <select id="txt-position-P" name="font">
-        <option   value="fullName">fullName</option>
-        <option   value="job">job</option>
-        <option   value="adresseP">adresse</option>  
-        <option   value="phoneNumberP">Phone-Number</option>
-        <option   value="pictureP">Personal-picture</option>
+        <option   value="fullName">Full Name</option>
+        <option   value="job">Job</option>
+        <option   value="adresseP">Adresse</option>  
+        <option   value="phoneNumberP">Phone Number</option>
+        <option   value="pictureP">Personal picture</option>
     </select>
     <label for="fontP">Select font :</label>
           <select id="fontP" name="font">
@@ -78,7 +87,7 @@
               <option selected="Festive" id='Festive' value="'Festive', cursive">Festive</option>
           </select>
           <label for="font-size">Font-size :</label>
-          <input type="text" id="font-size-P" name="font-size" placeholder="font size please..">
+          <input type="text" id="font-size-P" name="font-size" placeholder="font size..">
           <input type="color" id='text-color-P'>
     <button id='validate-position-P'>validate</button>
 </div>
