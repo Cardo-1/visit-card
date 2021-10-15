@@ -8,7 +8,28 @@ $(document).ready(function(){
     $('#position').hide()
     $('#positionP').hide()
     $('#logoSize').hide()
+    $('#pictureSize').hide()
+    $('#backC').hide()
+    $('#backP').hide()
+
     
+    $('#backC').click(function(){
+        $('#position').hide()
+        $('#logoSize').hide() 
+        $('.company-container').hide() 
+        $('.picC').hide()
+        $('.picBigC').show()
+        $('#backC').hide()
+    })  
+    $('#backP').click(function(){
+        $('#positionP').hide() 
+        $('#pictureSize').hide()
+        $('.personal-container').hide() 
+        $('.picP').hide()
+        $('.picBigP').show()
+        $('#backP').hide()
+    }) 
+
     $('#company').click(function(){
         $('#personal').hide()
         $('#company').hide()
@@ -31,6 +52,7 @@ $(document).ready(function(){
         $('#pic1').show()
         $('#position').show()
         $('#logoSize').show()
+        $('#backC').show()
     })
     $('#pic2Big').click(function(){
         $('#personal').hide()
@@ -40,6 +62,7 @@ $(document).ready(function(){
         $('#pic2').show()
         $('#position').show()
         $('#logoSize').show()
+        $('#backC').show()
     })
     $('#pic3Big').click(function(){
         $('#personal').hide()
@@ -49,6 +72,7 @@ $(document).ready(function(){
         $('#pic3').show()
         $('#position').show()
         $('#logoSize').show()
+        $('#backC').show()
     })
     $('#pic4Big').click(function(){
         $('#personal').hide()
@@ -58,6 +82,7 @@ $(document).ready(function(){
         $('#pic4').show()
         $('#position').show()
         $('#logoSize').show()
+        $('#backC').show()
     })
     $('#pic5Big').click(function(){
         $('#personal').hide()
@@ -66,6 +91,8 @@ $(document).ready(function(){
         $('.personal-container').show()
         $('#pic5').show()
         $('#positionP').show()
+        $('#pictureSize').show()
+        $('#backP').show()
     })
     $('#pic6Big').click(function(){
         $('#personal').hide()
@@ -74,6 +101,8 @@ $(document).ready(function(){
         $('.personal-container').show()
         $('#pic6').show()
         $('#positionP').show()
+        $('#pictureSize').show()
+        $('#backP').show()
     })
     $('#pic7Big').click(function(){
         $('#personal').hide()
@@ -82,6 +111,8 @@ $(document).ready(function(){
         $('.personal-container').show()
         $('#pic7').show()
         $('#positionP').show()
+        $('#pictureSize').show()
+        $('#backP').show()
     })
     $('#pic8Big').click(function(){
         $('#personal').hide()
@@ -90,6 +121,8 @@ $(document).ready(function(){
         $('.personal-container').show()
         $('#pic8').show()
         $('#positionP').show()
+        $('#pictureSize').show()
+        $('#backP').show()
     })
     $('#tryItC').click(function(){
         var LC=$('#logoC').val()
@@ -146,6 +179,14 @@ $(document).ready(function(){
     $('#clearC').click(function(){
     $('#company-content').html('')
     })
+
+    $('#validate-logo').click(function(){
+        var LH=$('#logo-height').val()
+        var LW=$('#logo-width').val()
+        $('#logoCStyle').css("height",LH)
+        $('#logoCStyle').css("width",LW)
+        })
+
     $('#tryItP').click(function(){
         var PPP=$('#pictureP').val()
         $('#personal-content').append("<p class='personalData' id='fullNameStyle' >"+$('#fullName').val()+"</p>")
@@ -159,6 +200,12 @@ $(document).ready(function(){
     $('#clearP').click(function(){
         $('.personalData').html('')
     })
+    $('#validate-picture').click(function(){
+        var PH=$('#picture-height').val()
+        var PW=$('#picture-width').val()
+        $('#picturePStyle').css("height",PH)
+        $('#picturePStyle').css("width",PW)
+        })
     $('#validate-position-P').click(function(){
         var TPP=$('#txt-position-P').val()
         var TopP=$('#topP').val()

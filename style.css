@@ -235,35 +235,38 @@ input {
 }
 #company{
     position:absolute;
-    top:320px;
-    left:400px;
-    width: 300px;
-    height: 200px;
+    top:360px;
+    left:370px;
+    width: 150px;
+    height: 150px;
 }
 #company:hover{
     transform: scale(1.2);
 }
 #personal{
     position:absolute;
-    top:320px;
-    left:920px;
-    height: 200px;
-    width: 280px;
+    top:360px;
+    right:370px;
+    height: 150px;
+    width: 150px;
 }
 #personal:hover{
     transform: scale(1.2);
 }
 #companyTxt{
     position: absolute;
-    left: 380px;
+    left: 250px;
     top: 100px;
-    font-size: 100px;  
+    font-size: 100px;
+    font-family:'Times New Roman', Times, serif 
 }
 #personalTxt{
     position: absolute;
     left: 900px;
+    right: 250px;
     top: 100px;
     font-size: 100px;
+    font-family:'Times New Roman', Times, serif
 }
 input[type=text], select, textarea {
     width: 100%;
@@ -283,24 +286,27 @@ input[type=button] {
     border-radius: 4px;
     cursor: pointer;
     width: 80px;
+    height: 40px;
     position:relative;
-    margin-left: 30px;
+    margin-left: 40px;
+    margin-top: 30px;
 }
 input[type=button]:hover {
     background-color: #026383;
 }
 .company-container {
     position: absolute;
-    top: 180px;
+    top: 120px;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
     width: 300px;
     margin-left: 30px; 
+    height: 410px;
 }
 .personal-container{
     position: absolute;
-    top: 180px;
+    top: 120px;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -372,10 +378,11 @@ input[type=button]:hover {
 }
 #position{
     position: absolute;
-    top:180px;
+    top:120px;
     width: 300px;
     left:1200px;
     padding: 12px;
+    height: 420px;
     border: 1px solid #ccc;
     background-color:#f2f2f2 ;
     border-radius: 4px;
@@ -390,14 +397,18 @@ input[type=button]:hover {
     cursor: pointer;
     width: 80px;
     position:relative;
-    margin-left: 30px;
+    margin-left: 5px;
 }
 #validate-position:hover {
     background-color: #026383;
 }
+#text-color-C{
+    width: 80px;
+    height: 40px;
+}
 #positionP{
     position: absolute;
-    top:180px;
+    top:120px;
     width: 300px;
     left:1200px;
     padding: 12px;
@@ -415,10 +426,14 @@ input[type=button]:hover {
     cursor: pointer;
     width: 80px;
     position:relative;
-    margin-left: 30px;
+    margin-left: 5px;
 }
 #validate-position-P:hover {
     background-color: #026383;
+}
+#text-color-P{
+    width: 80px;
+    height: 40px;
 }
 #logoCStyle{
     position: absolute;
@@ -434,4 +449,74 @@ input[type=button]:hover {
     height: 50px;
     width: 50px;
 }
-
+#logoSize{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top:550px;
+    left:1200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color:#f2f2f2 ;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+#validate-logo{
+    background-color: #008CBA;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80px;
+    position:relative;
+    margin-left: 100px; 
+}
+#validate-logo:hover {
+    background-color: #026383;
+}
+#pictureSize{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top:550px;
+    left:1200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color:#f2f2f2 ;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+#validate-picture{
+    background-color: #008CBA;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80px;
+    position:relative;
+    margin-left: 100px; 
+}
+.back{
+    background-color: #008CBA;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    position:absolute;
+    bottom:40px;
+    left: 40px;
+}
+.back:hover {
+    background-color: #026383;
+}
