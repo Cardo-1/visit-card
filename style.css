@@ -21,7 +21,20 @@ body{
     padding: 0;
     overflow: hidden;
     background-color: #333;
-
+    margin-top: -10px;
+    width: 1520px;
+    margin-left: -8px;
+}
+  
+.linb {
+    float:left;
+}
+#contact{
+    float: right;
+}
+.Cardo{
+    float: left;  
+}
   
 #liA {
     display: block;
