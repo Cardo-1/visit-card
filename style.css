@@ -14,8 +14,12 @@ body{
     padding: 0;
     overflow: hidden;
     background-color: #333;
-   width: 1536px;
-   position: absolute;
+    height:70px;
+}
+  #three{
+    font-size: 20px;
+    margin-left: 300px;
+    margin-top: 3px;  
   }
   
   li {
@@ -23,9 +27,33 @@ body{
     font-size: 100%;
     padding: -1%;
    }
-   #con{
-     margin-left: 1192px;
+   #car{
+       color: #afaaaa;
+       font-family: 'Times New Roman', Times, serif;
+       margin-top: 10px;
+       margin-left: 20px;
+       font-size: 20px;
+
    }
+   #con{
+     margin-left: 1350px;
+     font-size: 35px    ;
+     margin-top: -100px;
+   }
+   #pic{
+     width:1300px;
+     height: 700px;
+     margin-left: 100px;
+     margin-top: -15px;
+     }
+     #pict{
+    width: 1400px;
+    height: 1000px;
+    position: absolute;
+    margin-top: -870px;
+    margin-left: -200px;
+    opacity: 0.9;
+     }
   
   li a {
     display: block;
